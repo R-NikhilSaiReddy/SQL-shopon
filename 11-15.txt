@@ -1,0 +1,16 @@
+
+
+
+select * from dbo.product where categoryid = 2003
+
+select * from dbo.customeraddress where city like 'Bangalore'
+
+select * from dbo.orderd where orderdate = '2013-02-02'
+
+select productname from dbo.product where companyid=1001 or companyid=1002
+
+select c.customername,o.*  from customer as c
+inner join dbo.orderd as o
+on o.customerid = c.customerid
+where c.customerid=1
+
